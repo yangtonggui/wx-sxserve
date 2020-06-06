@@ -1,0 +1,29 @@
+<view class='main'>
+  <view class='addlist'>
+    <view class="addlists" wx:for="{{addressList}}" wx:key="index" bindtap="goback" data-index="{{index}}">
+      <view class="addlisttop">
+        <view class='addlistname'>
+          <view class="addlistusername">{{item.username}}</view>
+          <view class='addlistphone'>{{item.phone}}</view>
+        </view>
+        <view class="addlistress">{{item.area}}{{item.address}}</view>
+        <view class="line"></view>
+      </view>
+      <view class="addlistbot">
+        <view class="addlistleft">
+          <view class="quan {{item.isdefault=='1'?'defaultactive':''}}"></view>
+          <view class="adddefault">设为默认</view>
+        </view>
+        <view class="addlistright">
+          <view class="quan"></view>
+          <view class="adddefault" style="margin-right:46rpx;">编辑</view>
+          <view class="quan"></view>
+          <view class="adddefault">删除</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="addaddress" bindtap="add">
+    新增地址
+  </view>
+</view>

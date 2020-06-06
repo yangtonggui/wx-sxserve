@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "selectGood": "/components/selectGood/selectGood"
+  },
+  "navigationBarTitleText": "寄修服务"
+}

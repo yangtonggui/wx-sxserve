@@ -1,0 +1,60 @@
+<view class="main">
+  <view style="width:100%;background:#333;">
+    <view class="head">
+      <view class="headleft">
+        <view class='headstauts'>已接单</view>
+        <view class='headtitle'>电冰箱 维修</view>
+        <view class="headdate">2020-05-18</view>
+      </view>
+      <view class="headright"></view>
+    </view>
+    <view class="body">
+      <view class="list">
+        <view class="bodystuts active">已抢单</view>
+        <view class='det'>
+          <text class="iconfont icon-xuanzhong"></text>
+          <view class='list1' style="margin-top:-6rpx;">您的当前服务工程师为[许飞]</view>
+          <view class='list1'>上岗证号：HR07C005004</view>
+          <view class='list1'>电话：13292587695</view>
+          <view class='list2'>2020-04-25 12:25:30</view>
+        </view>
+      </view>
+      <view class="list">
+        <view class="bodystuts">已接单</view>
+        <view class='det'>
+          <text class="iconfont icon-yuandian"></text>
+          <view class='list1' style="margin-top:-6rpx;">您的服务订单已成功接收，由[杭州屹球制冷设备有限公司]的工程师为您服务</view>
+          <view class='list2'>2020-04-25 12:25:30</view>
+        </view>
+      </view>
+      <view class="list">
+        <view class="bodystuts">已下单</view>
+        <view class='det'>
+          <text class="iconfont icon-yuandian"></text>
+          <view class='list1' style="margin-top:-6rpx;">您的服务订单已提交成功</view>
+          <view class='list2'>2020-04-25 12:25:30</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='heng'></view>
+  <view class='orderInfo'>
+    <view class="title">订单信息</view>
+    <view class="orderList">
+      <view class="ordername">服务工单</view>
+      <view class="orderdet">WX-0001776803</view>
+    </view>
+    <view class="orderList">
+      <view class="ordername">联系人</view>
+      <view class="orderdet">酸菜鱼<view style="margin-left:30rpx;">18265966595</view></view>
+    </view>
+    <view class="orderList">
+      <view class="ordername">期望服务时间</view>
+      <view class="orderdet">2020-05-24  <view style="margin-left:20rpx;">上午</view></view>
+    </view>
+    <view class="orderList">
+      <view class="ordername">服务地址</view>
+      <view class="orderdet">浙江省杭州市西湖区古荡街道天堂软件园</view>
+    </view>
+  </view>
+</view>

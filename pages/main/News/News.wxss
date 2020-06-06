@@ -1,0 +1,75 @@
+/* pages/main/News/News.wxss */
+.main{
+  width: 100%;
+  min-height: 100vh;
+  background: #f7f7f7;
+}
+.list{
+  width: 92%;
+  margin:0 auto;
+  background: #fff;
+  border-radius: 8rpx;
+  margin-bottom: 20rpx;
+}
+.list_top{
+  width: 92%;
+  margin:0 auto;
+  padding-bottom: 30rpx;
+  border-bottom: 1px solid #F4F4F4;
+}
+.listtitle{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:26rpx 0;
+}
+.listtitle_left{
+  display: flex;
+  align-items: center;
+}
+.quan{
+  width: 34rpx;
+  height: 34rpx;
+  border-radius: 50%;
+  background: #CACACA;
+  position: relative;
+}
+.dian{
+  width: 8rpx;
+  height: 8rpx;
+  background: #E64242;
+  position: absolute;
+  right:0;
+  top:0;
+}
+.title{
+  font-size: 32rpx;
+  color: #333;
+  margin-left: 16rpx;
+}
+.listtitle_right{
+  font-size: 22rpx;
+  color: #999;
+}
+.list_mid{
+  font-size: 24rpx;
+  color: #666;
+  line-height:40rpx;
+}
+.list_bot{
+  width: 92%;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:22rpx 0;
+}
+.list_botleft{
+  font-size: 28rpx;
+  color: #333; 
+}
+.icon-youjiantou{
+  color: #999;
+  font-size: 24rpx;
+}

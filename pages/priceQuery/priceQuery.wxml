@@ -1,0 +1,75 @@
+<view class="main">
+  <view style="padding-top:30rpx;">
+    <view class="head">
+      <view class="headlist">
+        <view class='listleft'>
+          <view class='listtitle'>查询产品</view>
+          <view class="xing">*</view>
+        </view>
+        <view class='listright' bindtap='selectgoods'>
+          <view class="listrighttitle" wx:if="{{!goodName}}">请选择</view>
+          <view class="listrighttitle" wx:if="{{goodName}}" style="color:#000;">{{goodName}}</view>
+          <text class="iconfont icon-xiajiantou"></text>
+        </view>
+      </view>
+      <view class="headlist">
+        <view class='listleft'>
+          <view class='listtitle'>修理类型</view>
+          <view class="xing">*</view>
+        </view>
+        <picker bindchange="bindPickerChange" value="{{repIndex}}" range="{{repairList}}" header-text='请选择故障类型'>
+          <view class='listright'>
+            <view class="listrighttitle" style="color:#333;">{{repairList[repIndex]}}</view>
+            <text class="iconfont icon-xiajiantou"></text>
+          </view>
+        </picker>
+      </view>
+      <view class="headlist">
+        <view class='listleft'>
+          <view class='listtitle'>服务费用</view>
+        </view>
+        <view class='listright'>
+          <view class="listrighttitle">230.00</view>
+        </view>
+      </view>
+    </view>
+    <view class="head">
+      <view class="headlist">
+        <view class='listleft' style="display:flex;align-items:center;">
+          <view class='listtitle'>零件代码</view>
+          <text class="iconfont icon-tishi"></text>
+        </view>
+        <view class='listright'>
+          <input placeholder="请输入零件代码" class='inpyzm' placeholder-class="pl"></input>
+        </view>
+      </view>
+      <view class="headlist">
+        <view class='listleft'>
+          <view class='listtitle'>零件售价</view>
+        </view>
+        <view class='listright'>
+          <view class="listrighttitle">0.00</view>
+        </view>
+      </view>
+    </view>
+    <view class="head" style="margin-bottom:0;">
+      <view class="headlist">
+        <view class='listleft'>
+          <view class='listtitle'>总价</view>
+        </view>
+        <view class='listright'>
+          <view class="listrighttitle" style="color:#101010;">230.00</view>
+        </view>
+      </view>
+    </view>
+    <view class="tps">提示：不包含上门费</view>
+  </view>
+  <view class="bot">
+    <view class="botname">备注说明(必读)</view>
+    <view class="xian"></view>
+    <view class="botname">建议上门费</view>
+  </view>
+  <selectGood cancelTab="{{cancelTab}}" animationData1="{{animationData1}}" bind:myevent='getson'></selectGood>
+</view>
+
+

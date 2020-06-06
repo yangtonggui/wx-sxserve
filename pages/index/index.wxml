@@ -1,0 +1,119 @@
+<view class="main">
+  <view class="search">
+    <view class='searchname'>PanaBook</view>
+    <view class='searchinp'>
+      <text class="iconfont icon-fangdajing"></text>
+
+
+      <input placeholder="{{searchTip}}"></input>
+    </view>
+  </view>
+  <view class='body'>
+    <view class="banner">
+      <image src="/resources/imgs/img1.jpg"></image>
+    </view>
+    <view class="sec">
+      <view class="seclist" data-url='/pages/install/install' catchtap='navs'>
+        <view class='secpic'>
+          <image src="/resources/imgs/img2.jpg" mode="aspectFit"></image>
+        </view>
+        <view class="secname">安装</view>
+      </view>
+      <view class="seclist" data-url='/pages/repair/repair' catchtap='navs'>
+        <view class='secpic'>
+          <image src="/resources/imgs/img2.jpg" mode="aspectFit"></image>
+        </view>
+        <view class="secname">维修</view>
+      </view>
+      <view class="seclist" data-url='/pages/sendRepair/sendRepair' catchtap='navs'>
+        <view class='secpic'>
+          <image src="/resources/imgs/img2.jpg" mode="aspectFit"></image>
+        </view>
+        <view class="secname">寄修</view>
+      </view>
+      <view class="seclist" bindtap="maintain">
+        <view class='secpic'>
+          <image src="/resources/imgs/img2.jpg" mode="aspectFit"></image>
+        </view>
+        <view class="secname">保养</view>
+      </view>
+      <view class="seclist" data-url='/pages/priceQuery/priceQuery' catchtap='navs'>
+        <view class='secpic'>
+          <image src="/resources/imgs/img2.jpg" mode="aspectFit"></image>
+        </view>
+        <view class="secname">价格查询</view>
+      </view>
+    </view>
+    <view class="nearby">
+      <view class='nearhead'>
+        <view class="nearhead_left">
+          <image src="/resources/imgs/img2.jpg"></image>
+          <view class="nlname">附近门店</view>
+        </view>
+        <view class='nearhead_right' data-url='/pages/wdSerch/wdSerch' catchtap='navs'>
+          <view class='nrname'>网点查询</view>
+          <text class="iconfont icon-youjiantou"></text>
+        </view>
+      </view>
+      <view class="nearshop">
+        <scroll-view scroll-x="true">
+          <view class='nshop'>
+            <view class='nshoplist'>
+              <image src="/resources/imgs/img3.jpg"></image>
+              <view class='nshoptext'>
+                <view class='ns1'>杭州屹球制冷设备有限公司</view>
+                <view class="ns2">浙江省杭州市下城区永潮街70号</view>
+                <view class="ns3">
+                  <view class="nsjuli">1.2km</view>
+                  <view class='nsstuts'>最近浏览</view>
+                </view>
+              </view>
+            </view>
+            <view class='nshoplist'>
+              <image src="/resources/imgs/img3.jpg"></image>
+              <view class='nshoptext'>
+                <view class='ns1'>杭州屹球制冷设备有限公司你好你好</view>
+                <view class="ns2">浙江省杭州市下城区永潮街70号你好你好你好你好</view>
+                <view class="ns3">
+                  <view class="nsjuli">1.2km</view>
+                  <view class='nsstuts'>最近浏览</view>
+                </view>
+              </view>
+            </view>
+            <view class='nshoplist'>
+              <image src="/resources/imgs/img3.jpg"></image>
+              <view class='nshoptext'>
+                <view class='ns1'>杭州屹球制冷设备有限公司</view>
+                <view class="ns2">浙江省杭州市下城区永潮街70号</view>
+                <view class="ns3">
+                  <view class="nsjuli">1.2km</view>
+                  <view class='nsstuts'>最近浏览</view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+      <view class='tips'>
+        <image src="/resources/imgs/img1.jpg"></image>
+      </view>
+      <view class="det">
+        <view class='list'>
+          <image src="/resources/imgs/img1.jpg"></image>
+          <view class="listdet">
+            <view class='listdettop'>智慧匠心 铸就精工细节</view>
+            <view class='listdetbot'>4大人性化精工设计</view>
+          </view>
+        </view>
+        <view class='list'>
+          <image src="/resources/imgs/img1.jpg"></image>
+          <view class="listdet">
+            <view class='listdettop'>松下产品你知多少，为您揭秘更多功能</view>
+            <view class='listdetbot'>生活小技巧分享~</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <nav current='0'></nav>
+</view>

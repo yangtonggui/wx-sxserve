@@ -1,0 +1,57 @@
+/* pages/main/instructions/instructions.wxss */
+.main{
+  width: 100%;
+  min-height: 100vh;
+  background:#F7F7F7;
+}
+.search{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  background: #fff;
+  border-radius: 10rpx;
+}
+.icon-fangdajing{
+  font-size: 36rpx;
+  color: #bdbdbd;
+  margin-left: 28rpx;
+}
+.search input{
+  font-size: 28rpx;
+  color: #333;
+  flex: 1;
+  margin-left: 6rpx;
+}
+.chaxun{
+  font-size: 28rpx;
+  color: #101010;
+  margin-right: 56rpx;
+}
+.pl{
+  color: #bdbdbd;
+}
+.tip{
+  font-size: 20rpx;
+  color: #101010;
+  padding:50rpx 0 24rpx 0;
+}
+.list{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 106rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  margin-bottom: 20rpx;
+}
+.icon-rili{
+  font-size: 40rpx;
+  color: #101010;
+  margin-left: 36rpx;
+}
+.listtext{
+  font-size: 28rpx;
+  color: #101010;
+  margin-left: 28rpx;
+}

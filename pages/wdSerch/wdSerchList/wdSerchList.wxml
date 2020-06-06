@@ -1,0 +1,64 @@
+<view class="wd-list">
+	<view class="indexBar">
+		<view class="line  {{listShow ?' active': ''}}" bindtap="WdShow" data-index='{{1}}'> 列表</view>
+		<view class=" line {{mapShow?'active':''}}" bindtap="WdShow">地图</view>
+	</view>
+	<view class="prompt">
+		若网点信息有误，请拨打客服热线反馈：400-280-8888，客服将第一时间
+		联系您，为您解决问题
+	</view>
+	<!-- 列表显示 -->
+	<view wx:if='{{listShow}}'>
+		<view class="list" wx:for="{{datalist}}" key='{{index}}'>
+			<view class="hader">
+				<text>{{item.name}}</text>
+				<text class="juli">12.0km</text>
+			</view>
+			<view class="info">营业时间：{{item.time}}</view>
+			<view class="info">联系电话：{{item.phone}}</view>
+			<view class="info">
+				<text>详细地址：{{item.address}}</text>
+				<image class="ico" bindtap="markertap" data-markers='{{item}}'
+					src="./../../../resources/imgs/address.png" />
+				<image class="ico" bindtap="phoneCall" data-markers='{{item}}'
+					src="./../../../resources/imgs/phone.png" />
+
+
+			</view>
+		</view>
+	</view>
+	<!-- 地图显示 -->
+	<view wx:if='{{mapShow}}'>
+		<map class="map" show-compass='true' id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14"
+			controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap"
+			polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 800px;">
+			<!-- <cover-view class="cover-view swiper "> -->
+			<!-- <navigator> -->
+			<!--	<view class="cover-view swiper "-->
+			<swiper indicator-dots="true" class="cover-view swiper " bindchange='swiperChange'>
+				<block class="list" wx:for="{{datalist}}" wx:key="{{index}}">
+					<swiper-item>
+						<view class="swiper-content">
+							<view class="hader">
+								<text>{{item.name}}</text>
+								<text class="juli">12.0km</text>
+							</view>
+							<view class="info">营业时间：{{item.time}}</view>
+							<view class="info">联系电话：{{item.phone}}</view>
+							<view class="info">
+								<text>详细地址：{{item.address}}</text>
+								<image class="ico" bindtap="markertap" data-markers='{{item}}'
+									src="./../../../resources/imgs/address.png" />
+								<image class="ico" bindtap="phoneCall" data-markers='{{item}}'
+									src="./../../../resources/imgs/phone.png" />
+							</view>
+						</view>
+					</swiper-item>
+				</block>
+			</swiper>
+			<!-- </view> -->
+			<!-- </navigator>-->
+			<!-- </cover-view> -->
+		</map>
+	</view>
+</view>

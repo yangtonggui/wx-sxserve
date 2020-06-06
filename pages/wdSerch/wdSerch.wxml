@@ -1,0 +1,35 @@
+<view class="main">
+  <view style="padding-top:30rpx;">
+    <view class="head">
+      <view class="headlist">
+        <view class='listleft'>
+          <view class='listtitle'>选择产品</view>
+        </view>
+        <view class='listright' bindtap='selectgoods'>
+          <view class="listrighttitle" wx:if="{{!goodName}}">请输入产品</view>
+          <view class="listrighttitle" wx:if="{{goodName}}" style="color:#000;">{{goodName}}</view>
+          <text class="iconfont icon-youjiantou"></text>
+        </view>
+      </view>
+      <view class="headlist">
+        <view class='listleft'>
+          <view class='listtitle'>地址</view>
+        </view>
+        <view class='listright'>
+          <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange"
+            value="{{citiesIndex}}" range="{{cityArray}}" range-key="name" style="width:100%;">
+            <view class='city'>
+              <input class="selectorArea" placeholder="请选择所在区域" placeholder-class="holder" disabled="false"
+                value="{{selectedAddress}}"></input>
+              <text class="iconfont icon-youjiantou youjiantou"></text>
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class="wd-serch" bindtap="toserchList">
+      查询网点
+    </view>
+    <selectGood cancelTab="{{cancelTab}}" animationData1="{{animationData1}}" bind:myevent='getson'></selectGood>
+  </view>
+</view>

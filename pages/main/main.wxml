@@ -1,0 +1,59 @@
+<!--pages/main/main.wxml-->
+<view class="main">
+  <!-- <button bindtap="gotologin">登录</button> -->
+  <view class='head'>
+    <image src="/resources/imgs/img4.jpg" class="headpic"></image>
+    <view class="user">
+      <view class='user_left'>
+        <view class="userpic">
+          <image src="/resources/imgs/img1.jpg"></image>
+        </view>
+        <view class="username">酸菜鱼</view>
+      </view>
+      <view class='user_right'>
+        <image src="/resources/imgs/img2.jpg"></image>
+      </view>
+    </view>
+    <view class="userlist">
+      <view class='fun' data-url='/pages/main/myService/Service' catchtap='navs'>
+        <view class="funpic">
+          <image src="/resources/imgs/img2.jpg"></image>
+        </view>
+        <view class="funname">进度查询</view>
+      </view>
+      <view class='fun' data-url='/pages/main/News/News' catchtap='navs'>
+        <view class="funpic">
+          <image src="/resources/imgs/img2.jpg"></image>
+        </view>
+        <view class="funname">消息通知</view>
+      </view>
+      <view class='fun' data-url='/pages/main/repairPro/repairPro' catchtap='navs'>
+        <view class="funpic">
+          <image src="/resources/imgs/img2.jpg"></image>
+        </view>
+        <view class="funname">故障查询</view>
+      </view>
+      <view class='fun' data-url='/pages/main/instructions/instructions' catchtap='navs'>
+        <view class="funpic">
+          <image src="/resources/imgs/img2.jpg"></image>
+        </view>
+        <view class="funname">我的说明书</view>
+      </view>
+    </view>
+  </view>
+  <view class="body">
+    <view class="list" data-url='/pages/main/Tool/Tool' catchtap='navs'>
+      <view class="listname">我的工具</view>
+      <image src="/resources/imgs/right.png"></image>
+    </view>
+    <view class="list" data-url='/pages/main/address/address' catchtap='navs'>
+      <view class="listname">地址</view>
+      <image src="/resources/imgs/right.png"></image>
+    </view>
+    <view class="list">
+      <view class="listname">服务热线</view>
+      <image src="/resources/imgs/right.png"></image>
+    </view>
+  </view>
+  <nav current='1'></nav>
+</view>

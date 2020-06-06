@@ -1,0 +1,87 @@
+/* pages/wdSerch/wdSerch.wxss */
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background: #F7F7F7 100%;
+}
+
+.listleft {
+    position: relative;
+}
+
+.head {
+    width: 92%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10rpx;
+    margin-bottom: 30rpx;
+}
+
+.headlist {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 34rpx 0;
+    width: 92%;
+    margin: 0 auto;
+    border-bottom: 1px solid #eee;
+}
+.headlist:nth-last-child(1){
+    border:none;
+}
+.listtitle {
+    font-size: 28rpx;
+    color: #101010;
+}
+
+.listright {
+    display: flex;
+    align-items: center;
+}
+
+.listrighttitle {
+    font-size: 24rpx;
+    color: #999;
+}
+
+.selectorArea {
+
+    /* position: relative; */
+    text-align: right;
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 24rpx;
+    width: 400rpx;
+}
+
+.icon-youjiantou {
+    color: #999;
+    font-size: 24rpx;
+    margin-left: 8rpx;
+
+}
+
+.youjiantou {
+    display: inline-block;
+    transform: translate(0, -5px);
+}
+
+.wd-serch {
+    /* position: relative; */
+
+    width: 260px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    margin: 30% auto;
+    border-radius: 30px 30px 30px 30px;
+    background-color: rgba(225, 225, 225, 1);
+    color: rgba(16, 16, 16, 1);
+    font-size: 14px;
+    text-align: center;
+    font-family: Arial;
+    border: 1px solid rgba(255, 255, 255, 0);
+
+
+
+}

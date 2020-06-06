@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "selectGood": "/components/selectGood/selectGood"
+  },
+  "navigationBarTitleText": "安装服务"
+}

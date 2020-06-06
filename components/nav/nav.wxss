@@ -1,0 +1,45 @@
+.foot{
+  width: 100%;
+  display: flex;
+  height: 96rpx;
+  background: #F6F6F6;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.footchd{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footleft_img{
+  width: 100%;
+  height: 44rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footpic{
+  height: 44rpx;
+  width:44rpx ;
+  /* width: 100%;
+  height: 100%; */
+}
+.tab{
+  height: 44rpx;
+  width: 180rpx;
+display: flex;
+  /* width:44rpx ; */
+}
+.footname{
+  display: inline-block;
+  margin-left: 14rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  font-size: 22rpx;
+  color: #333;
+}
+.active{
+  color: black;
+}

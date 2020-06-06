@@ -1,0 +1,22 @@
+<view class='main'>
+  <view style="padding:30rpx 0;">
+    <view class="list" wx:for="{{NewList}}" wx:key='index'>
+      <view class="list_top">
+        <view class="listtitle">
+          <view class="listtitle_left">
+            <view class='quan'>
+              <view class='dian' wx:if="{{item.tab==1}}"></view>
+            </view>
+            <view class='title'>服务进度通知</view>
+          </view>
+          <view class="listtitle_right">{{item.time}}</view>
+        </view>
+        <view class="list_mid">{{item.det}}</view>
+      </view>
+      <view class="list_bot">
+        <view class="list_botleft">查看详情</view>
+        <text class='iconfont icon-youjiantou'></text>
+      </view>
+    </view>
+  </view>
+</view>

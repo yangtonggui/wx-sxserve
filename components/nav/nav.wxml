@@ -1,0 +1,12 @@
+  <view class="foot">
+    <view class="foot_left footchd" wx:for="{{navList}}" wx:key="index" bindtap="goNav" data-index='{{index}}'>
+      <view class="footleft_img">
+       <!-- 修改样式 -->
+      <view class="tab">
+        <image src="{{ current==index?item.pic:item.picSel}}"  class='footpic'></image>
+         <view class="footname {{current==index?'active':''}}">{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  

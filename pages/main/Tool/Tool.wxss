@@ -1,0 +1,5 @@
+/* pages/main/Tool/Tool.wxss */
+.main{
+  width: 100%;
+  min-height: 100vh;
+}

@@ -1,0 +1,146 @@
+/* components/selectGood/selectGood.wxss */
+@import '../../resources/style/iconfont.wxss';
+
+.endmask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 99;
+}
+
+.select {
+  position: fixed;
+  bottom: -1000rpx;
+  left: 0;
+  width: 100%;
+  height: 910rpx;
+  background: #fff;
+  z-index: 999;
+}
+
+.select_head {
+  width: 100%;
+  position: relative;
+  padding: 38rpx 0;
+  display: flex;
+  align-items: center;
+}
+
+.select_title {
+  width: 100%;
+  text-align: center;
+  font-size: 28rpx;
+  color: #101010;
+}
+
+.slect_sao {
+  position: absolute;
+  right: 42rpx;
+}
+
+.icon-saoyisao {
+  font-size: 32rpx;
+  color: #333;
+}
+
+.select_tip {
+  position: absolute;
+  top: 76rpx;
+  right: 44rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.select_san {
+  width: 0;
+  height: 0;
+  border-bottom: 8rpx solid rgba(42, 42, 42, 0.71);
+  border-right: 8rpx solid transparent;
+  border-left: 8rpx solid transparent;
+  margin-right: 6rpx;
+}
+
+.select_tiptext {
+  font-size: 24rpx;
+  color: #fff;
+  background: #2A2A2A;
+  border-radius: 4rpx;
+  padding: 0 8rpx;
+  opacity: 0.71;
+}
+
+.select_search {
+  width: 662rpx;
+  height: 64rpx;
+  border-radius: 40rpx;
+  background-color: rgba(247, 247, 247, 1);
+  border: 1px solid rgba(255, 255, 255, 0);
+  margin: 0 auto;
+  margin-top: 10rpx;
+  display: flex;
+  align-items: center;
+}
+
+.icon-fangdajing {
+  font-size: 30rpx;
+  color: #999;
+  margin-left: 58rpx;
+}
+
+.select_search input {
+  width: 458rpx;
+  font-size: 24rpx;
+  color: #333;
+  margin-left: 14rpx;
+}
+
+.select_body {
+  width: 662rpx;
+  margin: 0 auto;
+}
+
+.select_bodyhead {
+  width: 100%;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
+  padding: 20rpx 0;
+  margin-top: 20rpx;
+}
+
+.select_bhtitle {
+  font-size: 28rpx;
+  color: #101010;
+  margin-right: 28rpx;
+}
+
+.select_bhinfo {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.select_bhilist {
+  width: 288rpx;
+  height: 70rpx;
+  font-size: 26rpx;
+  color: #444;
+  text-align: center;
+  line-height: 70rpx;
+  border: 1px solid rgba(217, 217, 217, 1);
+  border-radius: 8rpx;
+  margin-bottom: 20rpx;
+}
+
+.buleactive {
+  color: #0D82CC;
+}
+
+.bulebackactive {
+  background: #0D82CC;
+  color: #fff;
+}

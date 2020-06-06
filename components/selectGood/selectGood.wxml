@@ -1,0 +1,39 @@
+<view style="width:100%;">
+  <view class="endmask" bindtap="cancel" wx:if="{{cancelTab==1}}"></view>
+  <view class="select" animation="{{animationData1}}">
+    <view class="select_head">
+      <view class='select_title'>报装产品</view>
+      <view class='slect_sao'>
+        <text class="iconfont icon-saoyisao" bindtap='scancode'></text>
+      </view>
+      <view class='select_tip'>
+        <view class='select_san'></view>
+        <view class='select_tiptext'>目前只对洗衣机有用</view>
+      </view>
+    </view>
+    <view class="select_search">
+      <text class="iconfont icon-fangdajing"></text>
+      <input placeholder="搜索"></input>
+    </view>
+    <view class='select_body'>
+      <view class="select_bodyhead">
+        <view class="select_bhlist" wx:if="{{tab>=index+1}}" wx:for="{{typeList}}" wx:key="index" bindtap="selectType"
+          data-index="{{index}}">
+          <view class="select_bhtitle {{index==currentTab?'buleactive':''}}">{{item.type}}</view>
+        </view>
+      </view>
+      <scroll-view scroll-y style="height:500rpx;margin-top: 42rpx;">
+        <view class="select_bhinfo">
+          <view class="select_bhilist {{current1==index?'bulebackactive':''}}" wx:for="{{List}}" wx:key="index"
+            wx:if="{{typeID==1}}" bindtap="selectGood1" data-index="{{index}}">{{item.name}}</view>
+
+          <view class="select_bhilist {{current2==index?'bulebackactive':''}}" wx:for="{{aList}}" wx:key="index"
+            wx:if="{{typeID==2}}" bindtap="selectGood2" data-index="{{index}}">{{item.aname}}</view>
+
+          <view class="select_bhilist" wx:for="{{bList}}" wx:key="index" wx:if="{{typeID==3}}" bindtap="selectGood3"
+            data-index="{{index}}">{{item.bname}}</view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

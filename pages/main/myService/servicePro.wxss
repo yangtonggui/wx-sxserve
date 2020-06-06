@@ -1,0 +1,119 @@
+/* pages/main/myService/servicePro.wxss */
+.main{
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  padding-bottom: 40rpx;
+}
+.head{
+  width: 90%;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.headleft{
+  margin-top: 60rpx;
+}
+.headstauts{
+  font-size: 32rpx;
+  color: #fff;
+}
+.headtitle{
+  font-size: 28rpx;
+  color: #fff;
+  margin-top: 22rpx;
+}
+.headdate{
+  font-size: 24rpx;
+  color: #fff;
+  margin-top: 10rpx;
+}
+.body{
+  width: 100%;
+  background: #fff;
+  border-radius: 30rpx 30rpx 0 0;
+  margin-top: 60rpx;
+  padding:100rpx 0;
+}
+.list{
+  width: 90%;
+  margin:0 auto;
+  display: flex;
+  align-items: flex-start;
+}
+.list:nth-last-of-type(1) .det{
+  border:none;
+}
+.bodystuts{
+  font-size: 28rpx;
+  color: #666;
+  line-height: 28rpx;
+}
+.icon-yuandian{
+  font-size: 28rpx;
+  color: #B9B9B9;
+  position: absolute;
+  top:0;
+  left:-14rpx;
+  background: #fff;
+}
+.icon-xuanzhong{
+  font-size: 28rpx;
+  color: #262626;
+  position: absolute;
+  top:0;
+  left:-14rpx;
+  background: #fff;
+}
+.det{
+  border-left: 1px solid #bbb;
+  padding-bottom: 70rpx;
+  margin-left: 38rpx;
+  position: relative;
+  flex: 1;
+}
+.list1{
+  font-size: 24rpx;
+  color: #666;
+  line-height: 36rpx;
+  margin-left: 26rpx;
+}
+.list2{
+  font-size: 18rpx;
+  color: #919191;
+  margin-left: 26rpx;
+}
+.active{
+  color: #101010;
+}
+.heng{
+  width: 100%;
+  height: 20rpx;
+  background: #f7f7f7;
+}
+.orderInfo{
+  width: 92%;
+  margin:0 auto;
+}
+.title{
+  font-size: 30rpx;
+  color: #101010;
+  font-weight: bold;
+  margin-top: 24rpx;
+}
+.orderList{
+  display: flex;
+  align-items: center;
+  margin-top: 32rpx;
+}
+.ordername{
+  font-size: 24rpx;
+  color: #333;
+  width: 200rpx;
+}
+.orderdet{
+  font-size: 24rpx;
+  color: #333;
+  display: flex;
+  align-items: center;
+}

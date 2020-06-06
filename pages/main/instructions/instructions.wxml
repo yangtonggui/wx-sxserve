@@ -1,0 +1,22 @@
+<view class='main'>
+  <view style="padding-top:30rpx;width:92%;margin:0 auto;">
+    <view class="search">
+      <text class="iconfont icon-fangdajing"></text>
+      <input placeholder="请输入产品序号查询" placeholder-class="pl"></input>
+      <view class='chaxun'>搜索</view>
+    </view>
+    <view class='tip'>请选择查询方式</view>
+    <view class="list">
+      <text class="iconfont icon-rili"></text>
+      <view class="listtext">扫描机器条码快速查询</view>
+    </view>
+    <view class="list">
+      <text class="iconfont icon-rili"></text>
+      <view class="listtext">选择品牌及产品类型查询</view>
+    </view>
+    <view class="list">
+      <text class="iconfont icon-rili"></text>
+      <view class="listtext">历史记录查询</view>
+    </view>
+  </view>
+</view>

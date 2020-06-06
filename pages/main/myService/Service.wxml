@@ -1,0 +1,59 @@
+<view class='main'>
+  <view class="navList">
+    <view class="navTitle" wx:for="{{navList}}" wx:key="index" bindtap="gotab" data-index="{{index}}">
+      <view class="navname">{{item.title}}</view>
+      <view class='line' wx:if="{{currentTab==index}}"></view>
+    </view>
+  </view>
+  <view class="body" wx:if="{{currentTab==0}}">
+    <view class='orderList' wx:for="{{List}}" wx:key="index">
+      <view class='orderList_top'>
+        <view class="orderList_type">{{item.type}}服务</view>
+        <view class='orderList_number'>{{item.num}}</view>
+      </view>
+      <view class='orderList_mid'>
+        <view class="orderList_pic">
+          <image src="{{item.pic}}" mode="asspectFit"></image>
+        </view>
+        <view class="orderList_det">
+          <view class="orderList_detleft">
+            <view class="orderList_detleft_title">{{item.name}}</view>
+            <view class="orderList_detleft_type">服务类型：{{item.type}}</view>
+            <view class="orderList_detleft_type">申请时间：{{item.time}}</view>
+          </view>
+          <text class="iconfont icon-youjiantou"></text>
+        </view>
+      </view>
+      <view class='orderList_bot'>
+        <view class="orderList_botbtn">取消</view>
+        <view class="orderList_botbtn" bindtap="gotoPro">服务进度</view>
+      </view>
+    </view>
+  </view>
+  <view class="body" wx:if="{{currentTab==1}}">
+    <view class='orderList' wx:for="{{List}}" wx:key="index">
+      <view class='orderList_top'>
+        <view class="orderList_type">{{item.type}}服务</view>
+        <view class='orderList_number'>{{item.num}}</view>
+      </view>
+      <view class='orderList_mid'>
+        <view class="orderList_pic">
+          <image src="{{item.pic}}" mode="asspectFit"></image>
+        </view>
+        <view class="orderList_det">
+          <view class="orderList_detleft">
+            <view class="orderList_detleft_title" style="display:flex;align-items:center;">{{item.name}}
+              <view class="stauts">已完成</view>
+            </view>
+            <view class="orderList_detleft_type">服务类型：{{item.type}}</view>
+            <view class="orderList_detleft_type">申请时间：{{item.time}}</view>
+          </view>
+          <text class="iconfont icon-youjiantou"></text>
+        </view>
+      </view>
+      <view class='orderList_bot'>
+        <view class="orderList_botbtn" bindtap="gotoPro">查看详情</view>
+      </view>
+    </view>
+  </view>
+</view>

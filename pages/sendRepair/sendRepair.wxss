@@ -1,0 +1,171 @@
+/* pages/install/install.wxss */
+.main{
+  width: 100%;
+  min-height: 100vh;
+  background: #F7F7F7 100%;
+  padding-bottom: 114rpx;
+}
+.head{
+  width: 92%;
+  margin:0 auto;
+  background: #fff;
+  border-radius: 10rpx;
+  margin-bottom: 30rpx;
+}
+.headlist{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:34rpx 0;
+  width: 92%;
+  margin:0 auto;
+  border-bottom: 1px solid #eee;
+}
+.headlist:nth-last-child(1){
+  border:none;
+}
+.listtitle{
+  font-size: 28rpx;
+  color: #101010;
+}
+.listleft{
+  position: relative;
+}
+.xing{
+  position: absolute;
+  font-size: 30rpx;
+  color: #EA3232;
+  right: -20rpx;
+  top:-15rpx;
+}
+.listright{
+  display: flex;
+  align-items: center;
+}
+.listrighttitle{
+  font-size: 24rpx;
+  color: #999;
+}
+.icon-youjiantou{
+  color: #999;
+  font-size: 24rpx; 
+  margin-left: 8rpx;
+}
+.icon-xiajiantou{
+  color: #999;
+  font-size: 24rpx; 
+  margin-left: 8rpx;
+}
+.insphone{
+  font-size: 24rpx;
+  color: #999;
+  margin-right: 16rpx;
+}
+.getyzm{
+  font-size: 20rpx;
+  color: #fff;
+  background: #C8C8C8;
+  border-radius: 10rpx;
+  padding: 8rpx;
+}
+.icon-rili{
+  font-size: 24rpx;
+  color: #999;
+  margin-left: 8rpx;
+}
+.add1{
+  font-size: 24rpx;
+  color: #333;
+  text-align: right;
+  line-height: 40rpx;
+}
+.inpyzm{
+  font-size: 24rpx;
+  color: #333;
+  text-align: right;
+  width: 300rpx;
+}
+.pl{
+  color: #999;
+}
+.bot{
+  display: flex;
+  align-items: center;
+  margin-top: 66rpx;
+  justify-content: center;
+}
+.botname{
+  font-size: 24rpx;
+  color: #101010;
+}
+.xian{
+  width: 2rpx;
+  height: 24rpx;
+  background: #bbb;
+  margin:0 42rpx;
+}
+.botsub{
+  width: 520rpx;
+  height: 88rpx;
+  border-radius: 60rpx;
+  background-color: rgba(223, 223, 223, 1);
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0);
+  margin:0 auto;
+  line-height: 88rpx;
+  font-size: 28rpx;
+  color: #101010;
+  margin-top: 70rpx;
+}
+.headlists{
+  width: 92%;
+  margin:0 auto;
+  height: 140rpx;
+}
+.headlists textarea{
+  width: 100%;
+  height: 100rpx;
+  font-size: 24rpx;
+  color: #333;
+}
+.num{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 20rpx;
+  color: #999;
+  text-align: right;
+}
+.jx{
+  width: 92%;
+  height: 240rpx;
+  margin:0 auto;
+  background: #fff;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.jxtext{
+  font-size: 26rpx;
+  color: #101010;
+}
+.icon-shangchuan{
+  color: #ccc;
+  font-size: 40rpx;
+  margin-left: 6rpx;
+}
+.explain{
+  width: 92%;
+  display: flex;
+  margin:0 auto;
+  justify-content: flex-end;
+  font-size: 20rpx;
+  color: #666;
+  padding:14rpx 0 26rpx 0;
+  text-decoration: underline;
+}
+.cardpic{
+  max-width: 100%;
+  max-height: 100%;
+}
